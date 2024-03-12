@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button class="close-icn-btn">
+          <svg class="close-icn-menu-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="menu-nav">
           <ul class="menu-info">
             <li class="menu-info-item">
@@ -122,6 +127,10 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team1.jpg              1x,
+                  ../images/Our-team/our-team1@2x.jpg 2x
+                "
                 src="./images/our-team1.jpg"
                 width="264"
                 height="260"
@@ -165,6 +174,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team2.jpg              1x,
+                  ../images/Our-team/our-team2@2x.jpg 2x
+                "
                 src="./images/our-team2.jpg"
                 width="264"
                 height="260"
@@ -208,6 +221,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team3.jpg              1x,
+                  ../images/Our-team/our-team3@2x.jpg 2x
+                "
                 src="./images/our-team3.jpg"
                 width="264"
                 height="260"
@@ -251,6 +268,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team4.jpg              1x,
+                  ../images/Our-team/our-team4@2x.jpg 2x
+                "
                 src="./images/our-team4.jpg"
                 width="264"
                 height="260"
@@ -302,6 +323,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/Our-Portfolio/0ur-portfolio1.jpg    1x,
+                    ./images/Our-Portfolio/0ur-portfolio1@2x.jpg 2x
+                  "
                   src="./images/Our-Portfolio/0ur-portfolio1.jpg"
                   alt="Bank-app"
                   width="360"
@@ -322,6 +347,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/Our-Portfolio/0ur-portfolio2.jpg    1x,
+                    ./images/Our-Portfolio/0ur-portfolio2@2x.jpg 2x
+                  "
                   src="./images/Our-Portfolio/0ur-portfolio2.jpg"
                   alt="Payment"
                   width="360"
@@ -342,6 +371,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/Our-Portfolio/0ur-portfolio3.jpg    1x,
+                    ./images/Our-Portfolio/0ur-portfolio3@2x.jpg 2x
+                  "
                   src="./images/Our-Portfolio/0ur-portfolio3.jpg"
                   alt="Meditation"
                   width="360"
@@ -362,6 +395,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/Our-Portfolio/0ur-portfolio4.jpg    1x,
+                    ./images/Our-Portfolio/0ur-portfolio4@2x.jpg 2x
+                  "
                   src="./images/Our-Portfolio/0ur-portfolio4.jpg"
                   alt="Taxi"
                   width="360"
@@ -382,6 +419,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/Our-Portfolio/0ur-portfolio5.jpg    1x,
+                    ./images/Our-Portfolio/0ur-portfolio5@2x.jpg 2x
+                  "
                   src="./images/Our-Portfolio/0ur-portfolio5.jpg"
                   alt="Screen"
                   width="360"
@@ -402,6 +443,10 @@
             <li class="portfolio-list-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/Our-Portfolio/0ur-portfolio6.jpg    1x,
+                    ./images/Our-Portfolio/0ur-portfolio6@2x.jpg 2x
+                  "
                   src="./images/Our-Portfolio/0ur-portfolio6.jpg"
                   alt="Courses"
                   width="360"
@@ -424,7 +469,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container adapt-content">
         <div class="footer-logo-box">
           <a href="./index.html" class="foot-log"
             >Web<span class="foot-text">Studio</span></a
@@ -496,7 +541,7 @@
       <div class="model">
         <button class="modal-close-btn" type="button">
           <svg class="backdrop-icon-btn" width="8" height="8">
-            <use class="icon-cls" href="./images/icons.svg#icon-Vector-1"></use>
+            <use class="icon-cls" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="drp-txt">Leave your contacts and we will call you back</p>
@@ -531,7 +576,7 @@
                 required
               />
               <svg class="rewiew-form-icn-svg" width="18" height="24">
-                <use href="./images/icons.svg#icon-tel_icon"></use>
+                <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </div>
           </div>
@@ -546,7 +591,7 @@
                 required
               />
               <svg class="rewiew-form-icn-svg" width="18" height="24">
-                <use href="./images/icons.svg#icon-email_icon"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -573,12 +618,72 @@
                 <svg class="rewiew-form-icon-checkbox" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a class="privacy-police-link" href="">Privacy Policy</a></label
+              ><span class="checkbox-spm"
+                >I accept the terms and conditions of the
+                <a class="privacy-police-link" href="">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="rewiew-form-checkbox-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!--=== Mobile menu ===-->
+
+    <div class="mobile-menu is-ope">
+      <div class="container mobile-menu-container">
+        <button class="mobile-btn">
+          <svg class="mobile-close-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-list">
+          <li class="mobile-list-item">
+            <a href="./index.html" class="mobile-link-item">Studio</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="" class="mobile-link-item">Portfolio</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="" class="mobile-link-item">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobile-info-list">
+          <li class="mobile-info-list-item">
+            <a href="mailto:info@devstudio.com" class="menu-info-link-item"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-info-list-item">
+            <a href="tel:+110001111111" class="menu-info-link-item"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-icons-list">
+          <li class="mobile-icons-list-item">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </li>
+          <li class="mobile-icons-list-item">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </li>
+          <li class="mobile-icons-list-item">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li class="mobile-icons-list-item">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
