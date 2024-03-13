@@ -92,6 +92,10 @@ p {
   margin-right: auto;
 }
 
+.menu-info-link {
+  font-style: normal;
+}
+
 .menu {
   display: flex;
   gap: 40px;
@@ -189,9 +193,10 @@ p {
   /*=== Menu styles ===*/
 
   .mobile-menu-container {
-    position: relative;
-    min-width: 320px;
-    max-height: 640px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 
   .mobile-menu {
@@ -201,8 +206,10 @@ p {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    padding-left: 16px;
+    padding-top: 72px;
     padding-right: 16px;
+    padding-bottom: 40px;
+    padding-left: 16px;
 
     z-index: 999999999;
     opacity: 0;
@@ -212,6 +219,13 @@ p {
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
+  }
+
+  .mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: auto;
   }
 
   .mobile-btn {
@@ -234,14 +248,6 @@ p {
     fill: #2e2f42;
   }
 
-  .mobile-list {
-    padding-top: 72px;
-  }
-
-  .mobile-list-item {
-    padding-bottom: 72px;
-  }
-
   .mobile-link-item {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -250,6 +256,16 @@ p {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+  }
+
+  .mobile-link-item-stud {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #404bbf;
   }
 
   .mobile-link-item:hover,
@@ -270,6 +286,15 @@ p {
     color: #434455;
   }
 
+  .menu-info-link-item-number {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+  }
+
   .menu-info-link-item:hover,
   .menu-info-link-item:focus {
     color: #4d5ae5;
@@ -278,7 +303,6 @@ p {
   .mobile-icons-list {
     display: flex;
     gap: 40px;
-    justify-content: space-between;
   }
 
   .mobile-icons-list-item {
@@ -293,6 +317,11 @@ p {
 
   .mobile-menu-social-svg {
     fill: #f4f4fd;
+  }
+
+  .mobile-info-list {
+    display: block;
+    margin-top: auto;
   }
 }
 
@@ -339,6 +368,7 @@ p {
   background-size: cover;
   background-position: center;
   width: 100%;
+  padding: 70px 0;
 }
 
 .main-title {
@@ -382,11 +412,12 @@ p {
       ),
       url(../images/hero/hero-mobile.jpg);
     max-width: 320px;
-    height: 432px;
   }
 
   .main-title {
-    padding: 72px 52px;
+    max-width: 216px;
+    margin: 0 auto;
+    margin-bottom: 72px;
   }
 
   @media only screen and (min-device-pixel-ratio: 2),
@@ -498,8 +529,10 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-  .description-title {
-    margin-top: 72px;
+  .description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
   }
 }
 
@@ -562,6 +595,7 @@ p {
 
 .team {
   background: #f4f4fd;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -579,7 +613,6 @@ p {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
-  padding-top: 96px;
 }
 
 .team-list-title {
@@ -646,9 +679,16 @@ p {
     flex-direction: column;
     gap: 72px;
   }
+
+  .team-conteiner {
+    width: 296px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .team {
+    padding-top: 104px;
+  }
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -659,14 +699,20 @@ p {
 }
 
 @media only screen and (min-width: 1158px) {
-  .team-title {
+  .team {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
 /*=== Portfolio Section ===*/
 
+.portfolio-list-img {
+  max-width: 360px;
+}
+
 .portf-hero {
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -743,6 +789,11 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .portfolio-list-img {
+    max-width: 288px;
+    height: 280px;
+  }
+
   .portfolio-list {
     display: flex;
     flex-direction: column;
@@ -765,17 +816,13 @@ p {
     gap: 24px;
     justify-content: center;
   }
-
-  .portfolio-title {
-    padding-top: 104px;
-  }
 }
 
 @media only screen and (min-width: 1158px) {
-  .portfolio-title {
+  .portf-hero {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
-
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -932,6 +979,14 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .foot-box {
+    margin: 72px auto;
+  }
+  .adapt-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
   .page-footer {
     margin: 0 auto;
     width: 320px;
@@ -949,7 +1004,6 @@ p {
 
   .foot-txt {
     text-align: center;
-    margin-top: 72px;
   }
 
   .foot-menu {
@@ -959,11 +1013,17 @@ p {
 
   .foot-inp-text {
     text-align: center;
-    margin-top: 72px;
   }
 
   .label-form-foot {
     margin-bottom: 16px;
+    margin: 0 auto;
+  }
+
+  .form-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
 
@@ -978,7 +1038,7 @@ p {
     flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 24px;
-    padding-left: 108px;
+    width: 584px;
   }
 
   .form-foot {
@@ -1191,6 +1251,7 @@ p {
 
 .rewiew-form-checkbox {
   margin-bottom: 24px;
+  width: 256px;
 }
 
 .rewiew-form-checkbox-spm {
@@ -1279,10 +1340,7 @@ p {
     margin-right: 60px;
     margin: 0 auto;
   }
-
-  .checkbox-spm {
-    display: inline-block;
-    max-width: 256px;
-    height: 31px;
+  .rewiew-form-checkbox-label {
+    width: 256px;
   }
 }
