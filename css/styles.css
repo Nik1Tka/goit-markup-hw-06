@@ -513,6 +513,7 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  text-align: center;
 }
 
 .description-list-text {
@@ -751,7 +752,7 @@ p {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list-title {
@@ -798,10 +799,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 48px;
-  }
-
-  .portfolio-title {
-    padding-top: 96px;
   }
 }
 
@@ -1070,6 +1067,7 @@ p {
     flex-wrap: nowrap;
     justify-content: center;
     padding-left: 15px;
+    width: 1440px;
   }
 
   .footer-logo-box {
